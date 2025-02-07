@@ -1,7 +1,8 @@
 import {useState} from 'react'
 import Link from "next/link"
+import { BsMoon, BsSun  } from "react-icons/bs";
 import { navlists } from "@/utils/constants"
-import { SearchInput } from "@/components"
+import { SearchInput, Networks } from "@/components"
 
 const Navbar = () => {
 
@@ -27,6 +28,7 @@ const Navbar = () => {
             )) }
 
             {/* networks */}
+            <Networks />
             {/* gas settings */}
             {/* color mode */}
             {/* cart */}
