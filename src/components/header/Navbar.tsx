@@ -25,6 +25,12 @@ const Navbar = () => {
                     { list.title }
                 </Link>
             )) }
+
+            {/* networks */}
+            {/* gas settings */}
+            {/* color mode */}
+            {/* cart */}
+            {/* connect wallet */}
         </ul>
     </nav>
   )
