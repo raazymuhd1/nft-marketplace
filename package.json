@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "Nft-Marketplace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.3",
+    "@tanstack/react-query": "^5.66.0",
+    "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "react-icons": "^5.4.0",
+    "viem": "^2.22.23",
+    "wagmi": "^2.14.10"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
