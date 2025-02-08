@@ -30,6 +30,7 @@ const signalItems = [
     { id: 14, title: "Jirasan", url: "/", img: jirasan, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
     { id: 15, title: "Bitbears by Berachain", url: "/", img: bitbears, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
 ]
+
 const trackingItems = [
     { id: 1, title: "Pudgy Penguins", url: "/", img: pudgy, floorPrice: "0.5", volume: "100" },
     { id: 2, title: "Milady", url: "/", img: milady, floorPrice: "0.5", volume: "100" },
@@ -48,4 +49,19 @@ const trackingItems = [
     { id: 15, title: "Bitbears by Berachain", url: "/", img: bitbears, floorPrice: "0.5", volume: "100" },
 ]
 
-export {navlists, heroSlides, trackingItems, signalItems}
+const trendingItems = [
+    { id: 1, title: "MetaWinners", url: "/", img: pudgy, floorPrice: "0.5", volume: "100" },
+    { id: 2, title: "InfiniGods", url: "/", img: milady, floorPrice: "0.5", volume: "100" },
+    { id: 3, title: "2049 // Reflection ", url: "/", img: azuki, floorPrice: "0.5", volume: "100" },
+    { id: 4, title: "SnackGang", url: "/", img: boredape, floorPrice: "0.5", volume: "100" },
+    { id: 5, title: "OCH Genesis", url: "/", img: doodles, floorPrice: "0.5", volume: "100" },
+    { id: 6, title: "XPSR24", url: "/", img: artBlock, floorPrice: "0.5", volume: "100" },
+    { id: 7, title: "Sprotoladys", url: "/", img: kaito, floorPrice: "0.5", volume: "100" },
+    { id: 8, title: "Egg nft", url: "/", img: lilpudgys, floorPrice: "0.5", volume: "100" },
+    { id: 9, title: "Honey Comb", url: "/", img: azukiElementalBeans, floorPrice: "0.5", volume: "100" },
+    { id: 10, title: "Pirate", url: "/", img: azukiElemental, floorPrice: "0.5", volume: "100" },
+    { id: 11, title: "Element Pass Standard", url: "/", img: mutant, floorPrice: "0.5", volume: "100" },
+    { id: 12, title: "Element Pass Genesis", url: "/", img: thecaptain, floorPrice: "0.5", volume: "100" },
+]
+
+export {navlists, heroSlides, trackingItems, signalItems, trendingItems}

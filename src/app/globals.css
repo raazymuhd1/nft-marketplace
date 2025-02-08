@@ -13,7 +13,7 @@ body {
 }
 
 /* signal styles */
-.signal_card_shadow {
+.card_shadow {
   box-shadow: 2px 2px 20px -15px #363c42, -2px -2px 20px -15px #363c42;
 }
 

@@ -18,7 +18,7 @@ const ItemCard = ({id, title, url, img, floorPrice, volume, volumeUp }: IProps) 
     <Link
         href={url}
         key={id} 
-        className={`w-[250px] h-[fit-content] flex flex-col gap-[15px] items-center p-[15px] radius signal_card_shadow overflow-hidden hover:mt-[-4px] transition-all duration-500 `}>
+        className={`w-[250px] h-[fit-content] flex flex-col gap-[15px] items-center p-[15px] radius card_shadow overflow-hidden hover:mt-[-4px] transition-all duration-500 `}>
         <div className='py-[4px] px-[6px] bg-secondary'>
             <h4 className="text-textBlue font-semibold text-[12px]"> Top Volume Up {volumeUp} </h4>
         </div>
