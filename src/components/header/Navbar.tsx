@@ -1,17 +1,21 @@
+"use client"
 import {useState} from 'react'
 import Link from "next/link"
+import Image from 'next/image';
 import { BsMoon, BsSun  } from "react-icons/bs";
+import { blockchain } from '@/assets';
 import { navlists } from "@/utils/constants"
-import { SearchInput, Networks } from "@/components"
+import { SearchInput, Networks, ConnectWallet } from "@/components"
 
 const Navbar = () => {
+      const [isDarkMode, setIsDarkMode] = useState(false)
 
   return (
     <nav className={`flex items-center justify-between w-[90%] mx-auto h-full`}>
         <aside className='flex w-[50%] items-center gap-[20px]'>
-            <div>
-                {/* logo */}
-                <h2 className="font-extrabold lg:text-[30px] md:text-[22px] text-[20px]"> Element </h2>
+            <div className="flex items-center ">
+                <Image src={blockchain} alt="logo" className="w-[40px] h-[40px]" />
+                <h2 className="font-extrabold lg:text-[30px] md:text-[22px] text-[20px]"> MiddleM </h2>
             </div>
 
             <SearchInput />
@@ -31,8 +35,11 @@ const Navbar = () => {
             <Networks />
             {/* gas settings */}
             {/* color mode */}
+            <BsMoon size={20} className={`cursor-pointer ${isDarkMode ? "inline" : "hidden"}`} />
+            <BsSun size={20} className={`cursor-pointer ${!isDarkMode ? "inline" : "hidden"}`} />
             {/* cart */}
             {/* connect wallet */}
+            <ConnectWallet />
         </ul>
     </nav>
   )
