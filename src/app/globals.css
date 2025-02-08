@@ -7,8 +7,35 @@
   --foreground: #171717;
 }
 
-
 body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+ /* reusable styles */
+ @layer {
+    
+     .flex-row-center {
+        @apply flex flex-row items-center; 
+     }
+
+     .flex-col-notcenter {
+        @apply flex flex-col; 
+     }
+
+     .radius {
+       @apply rounded-[8px];
+     }
+
+     .small-img {
+       @apply w-[60px] h-[60px] rounded-[10px] object-cover;
+     }
+
+     .item-header {
+      @apply text-[14px] text-secondary font-semibold;
+     }
+
+     .price-volume {
+       @apply font-semibold text-[14px] lg:text-[18px] ;
+     }
+ }

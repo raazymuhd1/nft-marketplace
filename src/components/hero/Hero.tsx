@@ -6,13 +6,14 @@ import { heroSlides } from '@/utils/constants'
 
 const Hero = () => {
     const [slides, setSlides] = useState(heroSlides)
+    // const [slideTrig, setSlideTrig] = useState([])
 
   return (
-    <section className={`w-full h-[430px] mt-[30px] rounded-[8px] p-[15px] flex items-center justify-between bg-secondary`}>
+    <section className={`w-full h-[450px] mt-[30px] rounded-[8px] flex items-center justify-between bg-secondary`}>
 
-       <div className="w-full h-full flex flex-col">
+       <div className="w-full h-full flex flex-col gap-[25px] overflow-x-scroll">
 
-          <div className="flex w-full h-full overflow-x-scroll ">
+          <div className="flex w-full h-[90%] p-[20px]">
             { slides.map(slide => (
             <aside 
               key={slide.id}
@@ -42,6 +43,15 @@ const Hero = () => {
           </div>
 
           {/* slide trigger */}
+          <div className="flex items-center gap-[10px] justify-center">
+            { [1, 2, 3].map((slider, idx) => (
+              <div 
+                key={idx}
+                className={`w-[100px] h-[4px] bg-textWhite`}>
+                {/* slide trigger */}
+              </div>
+            )) }
+          </div>
         </div>   
 
     </section>
