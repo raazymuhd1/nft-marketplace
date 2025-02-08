@@ -13,7 +13,24 @@ const heroSlides = [
 ]
 
 
-const items = [
+const signalItems = [
+    { id: 1, title: "Pudgy Penguins", url: "/", img: pudgy, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 2, title: "Milady", url: "/", img: milady, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 3, title: "Azuki", url: "/", img: azuki, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 4, title: "Bored Ape", url: "/", img: boredape, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 5, title: "Doodles", url: "/", img: doodles, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 6, title: "Art Blocks", url: "/", img: artBlock, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 7, title: "Kaito", url: "/", img: kaito, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 8, title: "Lil Pudgys", url: "/", img: lilpudgys, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 9, title: "Azuki Elemental Beans", url: "/", img: azukiElementalBeans, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 10, title: "Azuki Elemental", url: "/", img: azukiElemental, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 11, title: "Mutant Ape", url: "/", img: mutant, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 12, title: "The Captain", url: "/", img: thecaptain, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 13, title: "Honey Comb", url: "/", img: honeycomb, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 14, title: "Jirasan", url: "/", img: jirasan, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+    { id: 15, title: "Bitbears by Berachain", url: "/", img: bitbears, floorPrice: "0.5", volume: "100", volumeUp: "200%" },
+]
+const trackingItems = [
     { id: 1, title: "Pudgy Penguins", url: "/", img: pudgy, floorPrice: "0.5", volume: "100" },
     { id: 2, title: "Milady", url: "/", img: milady, floorPrice: "0.5", volume: "100" },
     { id: 3, title: "Azuki", url: "/", img: azuki, floorPrice: "0.5", volume: "100" },
@@ -31,4 +48,4 @@ const items = [
     { id: 15, title: "Bitbears by Berachain", url: "/", img: bitbears, floorPrice: "0.5", volume: "100" },
 ]
 
-export {navlists, heroSlides, items}
+export {navlists, heroSlides, trackingItems, signalItems}

@@ -13,7 +13,8 @@ export default {
       colors: {
          main: "#363c42",
          secondary: "#e7e7e7",
-         textWhite: "#fff"
+         textWhite: "#fff",
+         textBlue: "#2c9efd"
       },
     },
   },

@@ -12,6 +12,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* signal styles */
+.signal_card_shadow {
+  box-shadow: 2px 2px 20px -15px #363c42, -2px -2px 20px -15px #363c42;
+}
+
  /* reusable styles */
  @layer {
     
@@ -36,6 +41,6 @@ body {
      }
 
      .price-volume {
-       @apply font-bold text-[14px] lg:text-[18px] text-center ;
+       @apply font-bold text-[14px] lg:text-[18px] text-center;
      }
  }
