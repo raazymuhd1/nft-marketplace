@@ -37,3 +37,10 @@ export {default as honeycombTren} from "./trending-items/honeycomb.png"
 export {default as pirate} from "./trending-items/pirate.png"
 export {default as elementpass} from "./trending-items/elementpass.jpg"
 export {default as elementgen} from "./trending-items/elementgen.jpeg"
+
+// backers
+export {default as sig} from "./backers/sig.svg"
+export {default as dragonfly} from "./backers/dragonfly.svg"
+export {default as incde} from "./backers/incde.svg"
+export {default as sequoia} from "./backers/sequoia.svg"
+export {default as dragonRoark} from "./backers/dragon-roark.svg"
