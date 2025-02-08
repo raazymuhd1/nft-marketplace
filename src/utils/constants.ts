@@ -1,4 +1,5 @@
 import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady } from "@/assets"
+import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
 
 const navlists = [
     { id: 0, title: "Create", url: "/create" },
@@ -64,4 +65,16 @@ const trendingItems = [
     { id: 12, title: "Element Pass Genesis", url: "/", img: thecaptain, floorPrice: "0.5", volume: "100" },
 ]
 
-export {navlists, heroSlides, trackingItems, signalItems, trendingItems}
+const footerSocials = [
+    { id: 0, Logo: BsTwitter, url: "/" },
+    { id: 1, Logo: BsTelegram, url: "" },
+    { id: 2, Logo: BsDiscord, url: "" },
+]
+
+const footerLinks = [
+    { id: 0, title: "Docs", url: "/" },
+    { id: 1, title: "Privacy Statement", url: "/" },
+    { id: 2, title: "Term of service", url: "/" },
+]
+
+export {navlists, heroSlides, trackingItems, signalItems, trendingItems, footerLinks, footerSocials}

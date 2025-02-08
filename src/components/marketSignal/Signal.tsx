@@ -6,7 +6,7 @@ import { MdArrowBackIos, MdArrowForwardIos  } from "react-icons/md";
 
 const Signal = () => {
   return (
-    <section className="mt-[50px]">
+    <section className="mt-[50px] container-center">
        <SectionTitle text='Market Signal' styles='mb-[20px]' />
 
        <aside className="min-w-[230vw] overflow-x-scroll overflow-y-hidden flex-row-center gap-[20px] px-[10px] py-[20px]">

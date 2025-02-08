@@ -20,6 +20,10 @@ body {
  /* reusable styles */
  @layer {
     
+    .container-center {
+       @apply w-[95%] mx-auto;
+    }
+
      .flex-row-center {
         @apply flex flex-row items-center; 
      }

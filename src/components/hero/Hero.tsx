@@ -9,7 +9,7 @@ const Hero = () => {
     // const [slideTrig, setSlideTrig] = useState([])
 
   return (
-    <section className={`w-full h-[450px] mt-[30px] rounded-[8px] flex items-center justify-between bg-secondary`}>
+    <section className={`container-center h-[450px] mt-[30px] rounded-[8px] flex items-center justify-between bg-secondary`}>
 
        <div className="w-full h-full flex flex-col gap-[25px] overflow-x-scroll">
 

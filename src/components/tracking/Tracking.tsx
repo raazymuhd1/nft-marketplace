@@ -10,7 +10,7 @@ const Tracking = () => {
     ])
 
   return (
-    <section className="mt-[30px] w-full">
+    <section className="mt-[30px] container-center">
         <SectionTitle text="Real time data tracking" styles='' />
         {/* tabs */}
         <aside className="flex-row-center mt-[25px] gap-[15px]">

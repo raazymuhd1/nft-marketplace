@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header, RainbowProvider } from "@/components";
+import { Header, RainbowProvider, Footer } from "@/components";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,6 +31,7 @@ export default function RootLayout({
         <RainbowProvider>
           <Header />
           {children}
+          <Footer />
         </RainbowProvider>
       </body>
     </html>
