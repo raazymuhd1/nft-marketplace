@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero, Tracking, Signal, TrendingNow } from "@/components";
+import { Hero, Tracking, Signal, TrendingNow, Support } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
        <Tracking />
        <Signal />
        <TrendingNow />
+       <Support />
     </main>
   );
 }
