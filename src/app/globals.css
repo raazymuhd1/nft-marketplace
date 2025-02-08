@@ -28,7 +28,7 @@ body {
      }
 
      .small-img {
-       @apply w-[60px] h-[60px] rounded-[10px] object-cover;
+       @apply w-[60px] h-[40px] rounded-[10px] object-cover;
      }
 
      .item-header {
@@ -36,6 +36,6 @@ body {
      }
 
      .price-volume {
-       @apply font-semibold text-[14px] lg:text-[18px] ;
+       @apply font-bold text-[14px] lg:text-[18px] text-center ;
      }
  }

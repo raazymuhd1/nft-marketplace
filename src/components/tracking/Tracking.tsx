@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SectionTitle } from "@/components"
 import ItemHeader from './ItemHeader'
+import TopItems from './TopItems'
 import { items } from '@/utils/constants'
 
 const Tracking = () => {
@@ -13,40 +14,48 @@ const Tracking = () => {
     ])
 
   return (
-    <section className="mt-[30px]">
+    <section className="mt-[30px] w-full">
         <SectionTitle text="Real time data tracking" styles='capitalize' />
         {/* tabs */}
         <aside className="flex-row-center mt-[25px] gap-[15px]">
             { tabs.map(tab => (
-                <div className="p-[10px] radius w-[fit-content] bg-secondary cursor-pointer">
+                <div key={tab.id} className="p-[10px] radius w-[fit-content] bg-secondary cursor-pointer">
                     <h4 className="text-center font-semibold lg:text-[16px] text-[14px]"> {tab.title} </h4>
                 </div>
             )) }
         </aside>
 
-        {/* items header */}
-        <ItemHeader />
-        <div className="flex-col-notcenter gap-[20px]">
-            { items.slice(0, 5).map(item => (
-                <Link href={item.url} className="w-[35%] hover:bg-secondary flex-row-center p-[10px]">
-                    <aside className="flex-row-center w-[50%] gap-[10px]">
-                        <h4 className="font-semibold"> {item.id} </h4>
-                        <Image src={item.img} alt="item-img rounded-[10px]" className="small-img" />  
-                        <h2 className="font-bold text-[16px] whitespace-nowrap"> {item.title} </h2>   
-                    </aside>
-                    <aside className="flex-row-center w-[50%] gap-[10px]">
-                        <div className="flex-row-center gap-[10px]">
-                            {/* eth icon */}
-                            <h4 className="price-volume"> {item.floorPrice} </h4>
-                        </div>
-                        <div className="flex-row-center gap-[10px]">
-                            {/* eth icon */}
-                            <h4 className="price-volume"> {item.volume} </h4>
-                        </div>
-                    </aside>
-                </Link>
-            )) }
+        <div className="flex w-full justify-between gap-[25px]">
+            <div className="w-[30%]">
+                <ItemHeader />
+                <div className="flex-col-notcenter gap-[5px] w-full">
+                    { items.slice(0, 5).map(item => (
+                    <TopItems 
+                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                    )) }
+                </div>
+            </div>
+            <div className="w-[30%]">
+                <ItemHeader />
+                <div className="flex-col-notcenter gap-[5px] w-full">
+                    { items.slice(5, 10).map(item => (
+                    <TopItems 
+                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                    )) }
+                </div>
+            </div>
+            <div className="w-[30%]">
+                <ItemHeader />
+                <div className="flex-col-notcenter gap-[5px] w-full">
+                    { items.slice(10, 15).map(item => (
+                    <TopItems 
+                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                    )) }
+                </div>
+            </div>
         </div>
+        {/* items header */}
+
     </section>
   )
 }
