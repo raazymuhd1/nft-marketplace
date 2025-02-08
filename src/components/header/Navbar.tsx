@@ -11,7 +11,7 @@ const Navbar = () => {
       const [isDarkMode, setIsDarkMode] = useState(false)
 
   return (
-    <nav className={`flex items-center justify-between w-[90%] mx-auto h-full`}>
+    <nav className={`flex items-center justify-between w-[95%] mx-auto h-full`}>
         <aside className='flex w-[50%] items-center gap-[20px]'>
             <div className="flex items-center ">
                 <Image src={blockchain} alt="logo" className="w-[40px] h-[40px]" />

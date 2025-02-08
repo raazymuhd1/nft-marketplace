@@ -1,2 +1,8 @@
 export {default as eth} from "./images/ethereum.png"
 export {default as blockchain} from "./images/blockchain.png"
+export {default as bera} from "./images/bera.png"
+export {default as element} from "./images/element-banner.jpg"
+export {default as dxnk} from "./images/dxnk.png"
+export {default as dxnkProfile} from "./images/dxnk-profile.avif"
+export {default as elementProfile} from "./images/element-profile.jpg"
+export {default as beraProfile} from "./images/bera-profile.png"

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Hero } from "@/components";
 
 export default function Home() {
   return (
-    <main className="">
-        <h2> NFT </h2>
+    <main className="w-[95%] mx-auto">
+       <Hero />
     </main>
   );
 }
