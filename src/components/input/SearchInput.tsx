@@ -8,7 +8,7 @@ const SearchInput = () => {
         <MdSearch size={20} />
         <input type="text" placeholder='Searching..' className="bg-transparent border-none outline-none p-[10px] w-[80%]" />
         {/* another icon */}
-        <BsSlash size={20} className="cursor-pointer p-[8px] rounded-[6px] bg-slate-400 w-[10%]"/>
+        <BsSlash color='#363c42' size={24} className="cursor-pointer rounded-[6px] w-[10%] bg-secondary"/>
     </div>
   )
 }

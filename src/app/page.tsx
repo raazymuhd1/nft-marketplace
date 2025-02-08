@@ -3,7 +3,7 @@ import { Hero } from "@/components";
 
 export default function Home() {
   return (
-    <main className="w-[95%] mx-auto">
+    <main className="w-[95%] mx-auto overflow-x-auto">
        <Hero />
     </main>
   );
