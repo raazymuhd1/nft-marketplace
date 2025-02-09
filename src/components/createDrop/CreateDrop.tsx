@@ -5,6 +5,11 @@ import ColLogo from "./ColLogo"
 import ColChains from "./ColChains"
 
 const CreateDrop = () => {
+        const [infoLists, setInfoLists] = useState([
+            "Manage Collection Settings: Edit collection details, earnings, and links.",
+            "Set Up Your Drop: Configure your mint schedule and presale stages.",
+            "Prepare Designs: Customize your pages and upload all assets."
+        ])
     
 
   return (
@@ -28,7 +33,17 @@ const CreateDrop = () => {
            {/* collection chains */}
            <ColChains />
 
-
+           {/* informations */}
+           <div className="flex flex-col gap-[10px] w-full p-[15px] bg-secondary items-start h-[fit-content] mt-[20px]">
+             <h3 className="font-bold"> 🔔 After you deploy your contract you’ll be able to </h3>
+             <ul className="flex flex-col gap-[5px] ml-[25px]">
+                 { infoLists.map((list, idx) => (
+                     <li 
+                        key={idx} 
+                        className="list-disc text-secondaryAlt common_text_size_reg"> {list} </li>
+                 )) }
+             </ul>
+           </div>
         </div>
     </section>
   )

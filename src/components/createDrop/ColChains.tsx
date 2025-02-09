@@ -24,7 +24,7 @@ const ColChains = () => {
 
                     <aside 
                         className="flex-row-center gap-[6px]">
-                        <div className="">
+                        <div className="flex flex-col items-end">
                             <h4 className="font-bold text-[8px] md:text-[10px] lg:text-[12px] text-secondaryAlt"> Est. Gas Fee: 0.0008 ETH </h4>
                             <p className="common_text_size_reg text-secondaryAlt"> ~$3.26 </p>
                         </div>
