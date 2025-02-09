@@ -30,11 +30,11 @@ const ItemCard = ({id, title, url, img, floorPrice, volume, volumeUp }: IProps) 
 
         <aside className="flex-row-center w-[60%] mx-auto justify-between ">
             <div className="flex-col-notcenter">
-                <h4 className='text-secondary font-semibold text-[14px]'>Floor Price</h4>
+                <h4 className='text-secondaryAlt font-semibold text-[14px]'>Floor Price</h4>
                 <h3 className='font-bold'> {floorPrice} </h3>
             </div>
             <div className="flex-col-notcenter">
-                <h4 className='text-secondary font-semibold text-[14px]'> Volume </h4>
+                <h4 className='text-secondaryAlt font-semibold text-[14px]'> Volume </h4>
                 <h3 className='font-bold'> {volume} </h3>
             </div>
         </aside>

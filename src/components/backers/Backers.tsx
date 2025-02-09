@@ -10,8 +10,10 @@ const Backers = () => {
     <section
       className="bg-mainAlt h-[90px] p-[20px] w-full flex-row-center gap-[70px] justify-center border-b-[0.5px] border-b-secondary"
      >
-        { backers.map(back => (
-            <Image src={back} alt="backers-img" className=' object-cover' />
+        { backers.map((back, idx) => (
+            <Image
+              key={idx}
+              src={back} alt="backers-img" className=' object-cover cursor-pointer hover:scale-[1.1]' />
         )) }
      </section>
   )

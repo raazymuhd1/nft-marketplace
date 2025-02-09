@@ -26,11 +26,11 @@ const TrendingCard = ({id, img, title, url, floorPrice, volume }: IProps) => {
 
          <aside className="flex-row-center w-[80%] p-[20px] h-[30%] justify-between ">
             <div className="flex-col-notcenter">
-                <h4 className='text-secondary font-semibold text-[12px]'>Floor Price</h4>
+                <h4 className='text-secondaryAlt font-semibold text-[12px]'>Floor Price</h4>
                 <h3 className='font-bold'> {floorPrice} </h3>
             </div>
             <div className="flex-col-notcenter">
-                <h4 className='text-secondary font-semibold text-[12px]'> Volume </h4>
+                <h4 className='text-secondaryAlt font-semibold text-[12px]'> Volume </h4>
                 <h3 className='font-bold'> {volume} </h3>
             </div>
         </aside>

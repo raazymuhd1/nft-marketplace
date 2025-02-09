@@ -15,7 +15,7 @@ const Navbar = () => {
         <aside className='flex w-[50%] items-center gap-[20px]'>
             <div className="flex items-center ">
                 <Image src={blockchain} alt="logo" className="w-[40px] h-[40px]" />
-                <h2 className="font-extrabold lg:text-[30px] md:text-[22px] text-[20px]"> MiddleM </h2>
+                <Link href="/" className="font-extrabold lg:text-[30px] md:text-[22px] text-[20px]"> MiddleM </Link>
             </div>
 
             <SearchInput />

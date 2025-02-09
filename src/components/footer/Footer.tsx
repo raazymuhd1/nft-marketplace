@@ -19,7 +19,7 @@ const Footer = () => {
             {/* socials */}
           <div className="w-full justify-end flex-row-center gap-[15px]">
             { footerSocials.map(social => (
-              <social.Logo size={30} className="text-textWhite" />
+              <social.Logo key={social.id} size={30} className="text-textWhite cursor-pointer hover:translate-y-[2px]" />
             )) }
           </div>
 

@@ -44,3 +44,10 @@ export {default as dragonfly} from "./backers/dragonfly.svg"
 export {default as incde} from "./backers/incde.svg"
 export {default as sequoia} from "./backers/sequoia.svg"
 export {default as dragonRoark} from "./backers/dragon-roark.svg"
+
+// networks/chains
+export {default as ether} from "./networks/eth.png"
+export {default as ava} from "./networks/ava.png"
+export {default as bnb} from "./networks/bnb.png"
+export {default as op} from "./networks/op.png"
+export {default as arb} from "./networks/arb.png"

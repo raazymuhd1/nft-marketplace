@@ -41,10 +41,19 @@ body {
      }
 
      .item-header {
-      @apply text-[14px] text-secondary font-semibold;
+      @apply text-[14px] text-secondaryAlt font-semibold;
      }
 
      .price-volume {
        @apply font-bold text-[14px] lg:text-[18px] text-center;
+     }
+
+     /* create drop */
+     .common_text_size_reg {
+      @apply font-medium text-[6px] md:text-[8px] lg:text-[10px]; 
+     }
+
+     .common_bold {
+        @apply font-bold text-[8px] md:text-[10px] lg:text-[12px]; 
      }
  }
