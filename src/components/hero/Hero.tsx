@@ -9,15 +9,15 @@ const Hero = () => {
     // const [slideTrig, setSlideTrig] = useState([])
 
   return (
-    <section className={`container-center h-[450px] mt-[30px] rounded-[8px] flex items-center justify-between bg-secondary`}>
+    <section className={`container-center h-[450px] w-full mt-[30px]`}>
 
-       <div className="w-full h-full flex flex-col gap-[25px] overflow-x-scroll">
+       <div className="h-full flex flex-col gap-[25px] w-[95%] mx-auto p-[20px] bg-secondary rounded-[8px]">
 
-          <div className="flex w-full h-[90%] p-[20px]">
+          <div className="flex w-full h-[90%]">
             { slides.map(slide => (
-            <aside 
+              <aside 
               key={slide.id}
-              className="flex items-center h-full p-[15px] w-[90%] mx-auto justify-between">
+              className="flex items-center h-full p-[25px] w-[90%] mx-auto justify-between">
                   {/* items info */}
                   <div 
                     className="flex flex-col gap-[10px]">
@@ -40,7 +40,7 @@ const Hero = () => {
 
               </aside>
               )) }
-          </div>
+           </div>
 
           {/* slide trigger */}
           <div className="flex items-center gap-[10px] justify-center">

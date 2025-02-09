@@ -1,4 +1,4 @@
-import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady } from "@/assets"
+import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava } from "@/assets"
 import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
 
 const navlists = [
@@ -77,4 +77,17 @@ const footerLinks = [
     { id: 2, title: "Term of service", url: "/" },
 ]
 
-export {navlists, heroSlides, trackingItems, signalItems, trendingItems, footerLinks, footerSocials}
+const networkLists = [
+    { id: 0, name: "Ethereum", chainId: 1, logo: ether },
+    { id: 1, name: "Optimism", chainId: 1, logo: op },
+    { id: 2, name: "BNB Chain", chainId: 1, logo: bnb },
+    { id: 3, name: "Arbitrum", chainId: 1, logo: arb },
+    { id: 4, name: "Avalanche", chainId: 1, logo: ava },
+]
+
+export {
+    navlists, heroSlides, 
+    trackingItems, signalItems, 
+    trendingItems, footerLinks, 
+    footerSocials, networkLists
+}
