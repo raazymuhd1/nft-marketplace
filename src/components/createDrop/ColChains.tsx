@@ -38,7 +38,7 @@ const ColChains = () => {
                         onClick={() => setAdvancedSet(!advancedSet)} 
                         className="flex-row-center w-full gap-[5px] cursor-pointer">
                         <p className="common_bold text-secondaryAlt"> Advanced Settings </p>
-                        { advancedSet ? <MdKeyboardArrowDown size={20} className=""/> :  <MdKeyboardArrowUp size={20} className=""/>}
+                        { advancedSet ? <MdKeyboardArrowUp size={20} className=""/> :  <MdKeyboardArrowDown size={20} className=""/>}
                        
                     </div>
 
@@ -46,7 +46,7 @@ const ColChains = () => {
                         <h3 className="font-bold"> Non-transferable (Soulbound Token) </h3>
                         <div className="flex-row-center gap-[10px] border-[1px] radius p-[10px]">
                             <input type="checkbox" name="" id="check" className="active:border-textBlue cursor-pointer" />
-                            <h4> Soulbound Token is a non-transferable token, meaning the minter will always remain the owner. </h4>
+                            <p className="text-[10px] md:text-[12px] lg:text-[14px]"> Soulbound Token is a non-transferable token, meaning the minter will always remain the owner. </p>
                         </div>  
                     </div>
                 </div>
