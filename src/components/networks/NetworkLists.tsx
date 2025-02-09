@@ -10,7 +10,7 @@ interface IProps {
 
 const NetworkLists = ({showChains, setShowChains}: IProps) => {
   return (
-    <section className={`${showChains ? "flex-row-center opacity-[1] top-[50px] absolute" : "hidden opacity-0 top-[0px]"} w-[300px] gap-[15px] p-[10px] bg-mainAlt radius min-h-[200px] transition-all duration-500 flex-wrap
+    <section className={`${showChains.visible ? "flex-row-center opacity-[1] top-[50px] absolute" : "hidden opacity-0 top-[0px]"} w-[300px] gap-[15px] p-[10px] bg-mainAlt radius min-h-[200px] transition-all duration-500 flex-wrap
     
     `}>
         { networkLists.map(network => (

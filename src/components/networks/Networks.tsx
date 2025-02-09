@@ -20,8 +20,8 @@ const Networks = () => {
        <div 
         onClick={() => setShowChains({ ...showChains, visible: !showChains.visible })}
         className="flex items-center gap-[10px] cursor-pointer">
-          <Image src={eth} alt="network" className="w-[22px] h-[22px] rounded-[50%]" />
-          <h4 className="font-semibold"> Ethereum </h4>
+          <Image src={showChains?.logo} alt="network" className="w-[22px] h-[22px] rounded-[50%]" />
+          <h4 className="font-semibold"> {showChains.name} </h4>
        </div>
 
        <NetworkLists showChains={showChains} setShowChains={setShowChains} />
