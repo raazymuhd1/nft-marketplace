@@ -5,10 +5,12 @@ import Image from 'next/image';
 import { BsMoon, BsSun  } from "react-icons/bs";
 import { blockchain } from '@/assets';
 import { navlists } from "@/utils/constants"
-import { SearchInput, Networks, ConnectWallet } from "@/components"
+import { SearchInput, Networks, ConnectWallet, Cart } from "@/components"
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
       const [isDarkMode, setIsDarkMode] = useState(false)
+      const [showCart, setShowCart] = useState<boolean>(false)
 
   return (
     <nav className={`flex items-center justify-between w-[95%] mx-auto h-full`}>
@@ -34,10 +36,13 @@ const Navbar = () => {
             {/* networks */}
             <Networks />
             {/* gas settings */}
-            {/* color mode */}
             <BsMoon size={20} className={`cursor-pointer ${isDarkMode ? "inline" : "hidden"}`} />
             <BsSun size={20} className={`cursor-pointer ${!isDarkMode ? "inline" : "hidden"}`} />
             {/* cart */}
+            <MdOutlineShoppingCart
+             onClick={() => setShowCart(true)}
+             size={20} className="cursor-pointer" />
+            <Cart showCart={showCart} setShowCart={setShowCart}  />
             {/* connect wallet */}
             <ConnectWallet />
         </ul>
