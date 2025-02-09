@@ -3,7 +3,7 @@ import  { CreateDrop } from "@/components"
 
 const CreatePage = () => {
   return (
-    <div className='h-[100vh]'>
+    <div className='h-full'>
        <CreateDrop />
     </div>
   )

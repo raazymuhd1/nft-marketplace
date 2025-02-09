@@ -26,6 +26,7 @@ const Footer = () => {
           <div className="flex-row-center gap-[15px]">
              { footerLinks.map(link => (
                 <a 
+                  key={link.id}
                   href={link.url} target='_blank' className="text-textBlue hover:text-textWhite"> {link.title} </a>
              )) }
           </div>

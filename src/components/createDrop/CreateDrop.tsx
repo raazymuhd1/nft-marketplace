@@ -3,6 +3,7 @@ import { useState } from "react"
 import ColInput from "./ColInput"
 import ColLogo from "./ColLogo"
 import ColChains from "./ColChains"
+import { CustomButton } from "@/components"
 
 const CreateDrop = () => {
         const [infoLists, setInfoLists] = useState([
@@ -44,6 +45,11 @@ const CreateDrop = () => {
                  )) }
              </ul>
            </div>
+        </div>
+
+        {/* confirmation btn */}
+        <div className='border-[1px] mt-[30px] flex justify-end items-center h-[80px] p-[20px] sticky bottom-0 '>
+            <CustomButton styles="w-[15%] bg-textBlue text-textWhite"> Deploy Now </CustomButton>
         </div>
     </section>
   )
