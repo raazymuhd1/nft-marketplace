@@ -13,7 +13,9 @@ export { default as Footer } from "./footer/Footer"
 export { default as CreateDrop } from "./createDrop/CreateDrop"
 export { default as Cart } from "./cart/Cart"
 export { default as Detail } from "./colDetails/Detail"
+// profile
 export { default as UserProfile } from "./profile/UserProfile"
+export { default as EditAccount } from "./account/EditAccount"
 export { default as CustomButton } from "./button/CustomButton"
 export { default as RainbowProvider } from "./provider/RainbowProvider"
 

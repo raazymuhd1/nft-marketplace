@@ -5,6 +5,7 @@ import { azuki } from '@/assets'
 import { MdContentCopy } from "react-icons/md";
 import { colSocials, colExtraIcons, colTabs } from "@/utils/constants"
 import ColSearch from './ColSearch';
+import ColDetailSidebar from './ColDetailSidebar';
 
 const dummyAddr = '0x2675616c14eb3f56db556c1ff95aaf2a19c88bcb'
 
@@ -16,9 +17,9 @@ const Detail = () => {
         // }, [tabs])
 
   return (
-    <section className="w-full h-full">
+    <section className="w-full h-full p-[20px]">
         {/* top */}
-        <aside className='w-full flex justify-between items-start p-[20px] mt-[20px]'>
+        <aside className='w-full flex justify-between items-start mt-[20px]'>
             {/* left side (needs to refactor later on) */}
             <aside className="flex gap-[15px] w-[50%]">
                 <Image src={azuki} alt="item-img" className="w-[100px] h-[100px] object-cover radius" />
@@ -109,7 +110,7 @@ const Detail = () => {
         </aside>
 
         {/* tabs */}
-        <aside className="w-full p-[20px] mt-[30px]">
+        <aside className="w-full mt-[30px]">
             <aside className="flex items-start gap-[25px]">
                 { tabs.map(tab => (
                     <div 
@@ -124,6 +125,11 @@ const Detail = () => {
 
         {/* filters */}
         <ColSearch />
+
+        <aside className="flex w-full">  
+            <ColDetailSidebar />
+            {/* collections */}
+        </aside>
     </section>
   )
 }
