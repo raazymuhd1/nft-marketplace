@@ -89,23 +89,41 @@ const networkLists = [
 ]
 
 // item socials
-const itemSocials = [
+const colSocials = [
     { id: 0, Logo: CiGlobe, url: "/" },
     { id: 1, Logo: CiTwitter, url: "/" },
     { id: 2, Logo: FaInstagram, url: "/" },
     { id: 3, Logo: BsDiscord, url: "/" },
 ]
 
-const itemExtraIcons = [
+const colExtraIcons = [
     {id: 0, Logo: MdOutlineRefresh, url: "/"},
     {id: 1, Logo: MdOutlineStarOutline, url: "/"},
     {id: 2, Logo: MdShare, url: "/"},
+]
+
+const colTabs = [
+    {id: 0, title: "Items", isActive: false},
+    {id: 1, title: "My Items", isActive: false},
+    {id: 2, title: "Offers", isActive: false},
+    {id: 3, title: "Analytics", isActive: false},
+    {id: 4, title: "Activity", isActive: false},
+]
+
+const priceFilters = [
+    { id: 0, title: "Recently Listed", selected: false },
+    { id: 1, title: "Price: High to Low", selected: false },
+    { id: 2, title: "Price: Low to High", selected: false },
+    { id: 3, title: "Rarity: High to Low", selected: false },
+    { id: 4, title: "Recently Transfer", selected: false },
+    { id: 5, title: "Recently Created", selected: false },
+    { id: 6, title: "Ending Soon", selected: false },
 ]
 
 export {
     navlists, heroSlides, 
     trackingItems, signalItems, 
     trendingItems, footerLinks, 
-    footerSocials, networkLists, itemSocials,
-    itemExtraIcons
+    footerSocials, networkLists, colSocials,
+    colExtraIcons, colTabs, priceFilters
 }

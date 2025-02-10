@@ -1,12 +1,19 @@
-import React from 'react'
+"use client"
+import {useState, useEffect} from 'react'
 import Image from "next/image"
 import { azuki } from '@/assets'
 import { MdContentCopy } from "react-icons/md";
-import { itemSocials, itemExtraIcons } from "@/utils/constants"
+import { colSocials, colExtraIcons, colTabs } from "@/utils/constants"
+import ColSearch from './ColSearch';
 
 const dummyAddr = '0x2675616c14eb3f56db556c1ff95aaf2a19c88bcb'
 
 const Detail = () => {
+        const [tabs, updateTabs] = useState(colTabs)
+
+        // useEffect(() => {
+        //     updateTabs(tabs.map(tab => tab.id === 0 ? { ...tab, isActive: true } : tab ))
+        // }, [tabs])
 
   return (
     <section className="w-full h-full">
@@ -89,17 +96,34 @@ const Detail = () => {
             </aside>
 
             <aside className="w-[50%] flex-row-center gap-[15px] justify-end">
-                {itemSocials.map(social => (
+                {colSocials.map(social => (
                     <a key={social.id} href={social.url} target='_blank' >
                         <social.Logo size={20} />
                     </a>
                 ))}
                 <div className="h-[15px] w-[2px] bg-secondaryAlt" />
-                { itemExtraIcons.map(item => (
-                    <item.Logo size={20} />
+                { colExtraIcons.map(item => (
+                    <item.Logo key={item.id} size={20} />
                 )) }
             </aside>
         </aside>
+
+        {/* tabs */}
+        <aside className="w-full p-[20px] mt-[30px]">
+            <aside className="flex items-start gap-[25px]">
+                { tabs.map(tab => (
+                    <div 
+                        key={tab.id}
+                        className='flex flex-col w-[fit-content] p-[5px] gap-[5px]'>
+                        <h3 className="font-bold text-[14px] md:text-[16px] lg:text-[18px]"> {tab.title} </h3>
+                        <div className={`${tab.isActive ? "block" : "hidden"} h-[2px] w-full bg-textBlue`} />
+                    </div>
+                )) }
+            </aside>
+        </aside>
+
+        {/* filters */}
+        <ColSearch />
     </section>
   )
 }

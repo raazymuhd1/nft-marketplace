@@ -1,7 +1,7 @@
 import React from 'react'
 import {Detail} from "@/components"
 
-const ItemDetailPage = () => {
+const CollectionDetailPage = () => {
   return (
     <div
         className="h-screen w-full"
@@ -11,4 +11,4 @@ const ItemDetailPage = () => {
   )
 }
 
-export default ItemDetailPage
+export default CollectionDetailPage
