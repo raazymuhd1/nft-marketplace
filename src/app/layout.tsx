@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Header, RainbowProvider, Footer } from "@/components";
+import { Header, RainbowProvider, MarketProvider, Footer } from "@/components";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,9 +29,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full overflow-x-auto`}
       >
         <RainbowProvider>
-          <Header />
-          {children}
-          <Footer />
+          <MarketProvider>
+            <Header />
+            {children}
+            <Footer />
+          </MarketProvider>
         </RainbowProvider>
       </body>
     </html>

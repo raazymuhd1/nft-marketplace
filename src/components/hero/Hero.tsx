@@ -16,8 +16,8 @@ const Hero = () => {
           <div className="flex w-full h-[90%]">
             { slides.map(slide => (
               <aside 
-              key={slide.id}
-              className="flex items-center h-full p-[25px] w-[90%] mx-auto justify-between">
+                key={slide.id}
+                className="flex items-center h-full p-[25px] w-[90%] mx-auto justify-between cursor-pointer">
                   {/* items info */}
                   <div 
                     className="flex flex-col gap-[10px]">

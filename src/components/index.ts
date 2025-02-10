@@ -12,5 +12,10 @@ export { default as Backers } from "./backers/Backers"
 export { default as Footer } from "./footer/Footer"
 export { default as CreateDrop } from "./createDrop/CreateDrop"
 export { default as Cart } from "./cart/Cart"
+export { default as Detail } from "./itemDetails/Detail"
+export { default as UserProfile } from "./profile/UserProfile"
 export { default as CustomButton } from "./button/CustomButton"
 export { default as RainbowProvider } from "./provider/RainbowProvider"
+
+// Context Api
+export {  default as MarketProvider } from "./ContextApi"

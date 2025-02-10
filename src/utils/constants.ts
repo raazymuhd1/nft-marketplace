@@ -1,5 +1,8 @@
 import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava } from "@/assets"
 import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
+import { CiGlobe, CiTwitter  } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import { MdOutlineRefresh, MdOutlineStarOutline, MdShare   } from "react-icons/md";
 
 const navlists = [
     { id: 0, title: "Create", url: "/create" },
@@ -85,9 +88,24 @@ const networkLists = [
     { id: 4, name: "Avalanche", chainId: 1, logo: ava },
 ]
 
+// item socials
+const itemSocials = [
+    { id: 0, Logo: CiGlobe, url: "/" },
+    { id: 1, Logo: CiTwitter, url: "/" },
+    { id: 2, Logo: FaInstagram, url: "/" },
+    { id: 3, Logo: BsDiscord, url: "/" },
+]
+
+const itemExtraIcons = [
+    {id: 0, Logo: MdOutlineRefresh, url: "/"},
+    {id: 1, Logo: MdOutlineStarOutline, url: "/"},
+    {id: 2, Logo: MdShare, url: "/"},
+]
+
 export {
     navlists, heroSlides, 
     trackingItems, signalItems, 
     trendingItems, footerLinks, 
-    footerSocials, networkLists
+    footerSocials, networkLists, itemSocials,
+    itemExtraIcons
 }

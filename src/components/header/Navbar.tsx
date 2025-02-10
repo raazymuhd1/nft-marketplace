@@ -2,10 +2,11 @@
 import {useState} from 'react'
 import Link from "next/link"
 import Image from 'next/image';
+import { IProfile, MappedState } from "@/types"
 import { BsMoon, BsSun  } from "react-icons/bs";
 import { blockchain } from '@/assets';
 import { navlists } from "@/utils/constants"
-import { SearchInput, Networks, ConnectWallet, Cart } from "@/components"
+import { SearchInput, Networks, ConnectWallet, Cart, UserProfile } from "@/components"
 import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Navbar = () => {
@@ -43,6 +44,8 @@ const Navbar = () => {
              onClick={() => setShowCart(true)}
              size={20} className="cursor-pointer" />
             <Cart showCart={showCart} setShowCart={setShowCart}  />
+               {/* user profile modal */}
+            <UserProfile />
             {/* connect wallet */}
             <ConnectWallet />
         </ul>
