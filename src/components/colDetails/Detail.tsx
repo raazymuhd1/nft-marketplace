@@ -115,7 +115,7 @@ const Detail = () => {
                 { tabs.map(tab => (
                     <div 
                         key={tab.id}
-                        className='flex flex-col w-[fit-content] p-[5px] gap-[5px]'>
+                        className='flex flex-col w-[fit-content] p-[5px] gap-[5px] cursor-pointer'>
                         <h3 className="font-bold text-[14px] md:text-[16px] lg:text-[18px]"> {tab.title} </h3>
                         <div className={`${tab.isActive ? "block" : "hidden"} h-[2px] w-full bg-textBlue`} />
                     </div>

@@ -23,6 +23,10 @@ body {
   box-shadow: 2px 2px 20px -15px #363c42, -2px -2px 20px -15px #363c42;
 }
 
+#drop_zone:focus {
+  border: dashed 1px blue;
+}
+
  /* reusable styles */
  @layer {
     

@@ -19,10 +19,13 @@ const AccountImages = () => {
         }
 
   return (
-    <div className="mt-[20px]">
+    <div 
+       tabIndex={0}
+       id="drop_zone"
+        className="mt-[20px] h-[20%]">
             <h3 className="font-bold text-[1vmax]"> Profile Picture </h3> 
                 {/* file selection */}
-                <aside className="border-[1px] p-[10px] radius flex-row-center gap-[20px] justify-between h-[200px]">
+                <aside className="border-[1px] border-secondaryAlt p-[10px] radius flex-row-center gap-[20px] justify-between h-[200px]">
                     <div className="h-full bg-secondary w-[200px] rounded-[50%]">
                         <input
                                 ref={inputRef} 

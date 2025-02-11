@@ -1,7 +1,7 @@
 import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava } from "@/assets"
 import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
-import { CiGlobe, CiTwitter  } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
+import { FaGlobe, FaStar } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
 import { MdOutlineRefresh, MdOutlineStarOutline, MdShare   } from "react-icons/md";
 
 const navlists = [
@@ -90,15 +90,15 @@ const networkLists = [
 
 // item socials
 const colSocials = [
-    { id: 0, Logo: CiGlobe, url: "/" },
-    { id: 1, Logo: CiTwitter, url: "/" },
-    { id: 2, Logo: FaInstagram, url: "/" },
+    { id: 0, Logo: FaGlobe, url: "/" },
+    { id: 1, Logo: BsTwitter, url: "/" },
+    { id: 2, Logo: BiLogoInstagramAlt, url: "/" },
     { id: 3, Logo: BsDiscord, url: "/" },
 ]
 
 const colExtraIcons = [
     {id: 0, Logo: MdOutlineRefresh, url: "/"},
-    {id: 1, Logo: MdOutlineStarOutline, url: "/"},
+    {id: 1, Logo: FaStar, url: "/"},
     {id: 2, Logo: MdShare, url: "/"},
 ]
 
