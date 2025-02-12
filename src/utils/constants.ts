@@ -1,6 +1,6 @@
 import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava } from "@/assets"
 import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
-import { FaGlobe, FaStar } from "react-icons/fa";
+import { FaGlobe, FaStar, FaMedium  } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { MdOutlineRefresh, MdOutlineStarOutline, MdShare   } from "react-icons/md";
 
@@ -120,10 +120,18 @@ const priceFilters = [
     { id: 6, title: "Ending Soon", selected: false },
 ]
 
+const accountSocialLinks = [
+    { id: 0, Logo: BsTwitter, url: "https://x.com/" },
+    { id: 1, Logo: BiLogoInstagramAlt, url: "https://instagram.com/" },
+    { id: 2, Logo: BsTelegram, url: "https://t.me.com/@" },
+    { id: 3, Logo: BsDiscord, url: "https://discord.gg/" },
+    { id: 4, Logo: FaMedium, url: "https://medium.com/@" },
+]
+
 export {
     navlists, heroSlides, 
     trackingItems, signalItems, 
     trendingItems, footerLinks, 
     footerSocials, networkLists, colSocials,
-    colExtraIcons, colTabs, priceFilters
+    colExtraIcons, colTabs, priceFilters, accountSocialLinks
 }
