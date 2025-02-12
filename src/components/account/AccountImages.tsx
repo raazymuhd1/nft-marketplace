@@ -22,7 +22,7 @@ const AccountImages = () => {
     <div 
        tabIndex={0}
        id="drop_zone"
-        className="mt-[20px] h-[20%]">
+        className="mt-[20px] h-[30%]">
             <h3 className="font-bold text-[1vmax]"> Profile Picture </h3> 
                 {/* file selection */}
                 <aside className="border-[1px] border-secondaryAlt p-[10px] radius flex-row-center gap-[20px] justify-between h-[200px]">

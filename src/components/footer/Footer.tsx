@@ -5,7 +5,8 @@ import { blockchain } from "@/assets"
 
 const Footer = () => {
   return (
-    <footer className="h-[150px] w-full bg-mainAlt p-[20px] flex-row-center justify-between">
+    <footer className="h-[150px] w-full bg-mainAlt p-[20px] flex-row-center justify-between
+    ">
       <aside className="flex flex-col gap-[15px]">
         <div className="flex-row-center gap-[10px]">
             <Image src={blockchain} alt="" className="w-[40px] h-[40px]" />

@@ -17,7 +17,7 @@ const Detail = () => {
         // }, [tabs])
 
   return (
-    <section className="w-full h-full p-[20px]">
+    <section className="w-full p-[20px]">
         {/* top */}
         <aside className='w-full flex justify-between items-start mt-[20px]'>
             {/* left side (needs to refactor later on) */}

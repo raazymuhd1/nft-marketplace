@@ -3,7 +3,7 @@ import { EditAccount } from "@/components"
 
 const AccountEditPage = () => {
   return (
-    <section className="h-screen w-full">
+    <section className="h-full w-full">
         <EditAccount />
     </section>
   )

@@ -3,7 +3,7 @@ import { CustomButton } from "@/components"
 
 const AccountDetails = () => {
   return (
-    <div className="flex h-[40%] flex-col w-full gap-[20px] mt-[20px]">
+    <div className="flex h-[60%] flex-col w-full gap-[20px] mt-[20px]">
         <div className="flex flex-col gap-[10px]">
             <h3 className="text-[1vmax] font-bold"> Username </h3>
             <input type="text" name="" id="" placeholder='username' className="p-[10px] border-[1px] border-secondaryAlt outline-none radius" />
