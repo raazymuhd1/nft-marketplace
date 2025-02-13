@@ -9,27 +9,27 @@ const ColSearch = () => {
 
   return (
     <section className="w-full sticky top-0 h-[40px] flex-row-center gap-[10px] mt-[10px]">
-        <div className="p-[5px] radius border-[1px] cursor-pointer">
+        <div className="p-[5px] radius border-[1px] border-secondaryAlt cursor-pointer">
             <MdArrowBackIosNew size={24} />
         </div>
         {/* search input */}
-        <div className="flex-row-center h-full w-[80%] radius border-[1px] p-[5px]">
+        <div className="flex-row-center h-full w-[40%] xl:w-[80%] radius border-[1px] border-secondaryAlt p-[5px]">
             <MdSearch size={24} className='' />
-            <input type="text" placeholder='Search...' className="bg-transparent border-none outline-none p-[10px] w-[60%] h-full" />
+            <input type="text" placeholder='Search...' className="bg-transparent border-none outline-none p-[10px] w-[80%] h-full" />
         </div>
 
         {/* filtering */}
-        <div className="w-[10%] relative top-0 h-full">
+        <div className="w-[20%] md:w-[10%] relative top-0 h-full">
             {/* filter trigger */}
             <div 
                 onClick={() => updateFilters(!showFilters)}
-                className="flex-row-center border-[1px] radius gap-[10px] h-full w-full p-[5px] justify-center cursor-pointer">
-                <h4> Recently Listed </h4>
+                className="flex-row-center border-[1px] border-secondaryAlt radius gap-[10px] h-full w-full p-[5px] justify-center cursor-pointer">
+                <h4 className="text-[.9vmax] whitespace-nowrap font-bold"> Recently Listed </h4>
                 { showFilters ? <MdOutlineKeyboardArrowUp size={24} /> :  <MdOutlineKeyboardArrowDown size={24} /> }
             </div>
 
             {/* filter lists */}
-             <div className={`${showFilters ? "flex opacity-1 flex-col gap-[10px]" : "hidden opacity-0"} bg-main radius absolute top-[40px] w-full`}>
+             <div className={`${showFilters ? "flex opacity-1 flex-col gap-[10px]" : "hidden opacity-0"} bg-main radius absolute top-[40px]`}>
                 { priceFilters?.map(filter => (
                     <div
                         onClick={() => updateFilters(false)} 
@@ -42,9 +42,9 @@ const ColSearch = () => {
         </div>
 
         {/* offers */}
-        <div className="w-[10%] h-full flex-row-center gap-[10px] radius border-[1px] p-[5px] justify-center cursor-pointer">
+        <div className="w-[20%] lg:w-[10%] h-full flex-row-center gap-[10px] radius border-[1px] border-secondaryAlt p-[5px] justify-center cursor-pointer">
             <MdLocalOffer size={20} />
-            <h4 className="font-bold text-[14px]"> Collection Offer </h4>
+            <h4 className="font-bold text-[.9vmax] whitespace-nowrap"> Collection Offer </h4>
         </div>
     </section>
   )
