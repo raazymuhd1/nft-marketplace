@@ -1,36 +1,77 @@
 import { useState } from "react"
 import { ether } from "@/assets"
+import { networkLists } from "@/utils/constants"
 import Image from "next/image"
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 const ColChains = () => {
     const [showChains, setShowChains] = useState<boolean>(false)
+    const [selectedChain, setSelectedChain] = useState({
+        name: "Ethereum",
+        chainId: 1,
+        logo: ether
+    })
     const [advancedSet, setAdvancedSet] = useState<boolean>(false)
+
+    console.log(selectedChain)
 
   return (
       <div className="mt-[20px] w-full flex flex-col gap-[10px]">
                 <h3 className="font-bold"> Network/Chain </h3> 
-                <p className="common_bold text-secondaryAlt"> Select the blockchain network where you want to deploy your smart contract. </p>
+                <p className="common_bold text-secondaryAlt"> Select the blockchain network where you want to deploy your smart contract. 
+                </p>
 
-                <div className="flex-row-center justify-between w-full p-[8px] radius border-[1px] bg-secondary cursor-pointer hover:border-textBlue">
-                    {/* chains selection */}
-                    <aside className="flex-row-center">
-                        <Image src={ether} alt="chain-img" className="w-[25px] h-[25px] radius" />
-                        <div className="flex flex-col">
-                            <h4 className="font-bold text-[8px] md:text-[10px] lg:text-[12px]"> Ethereum </h4>
-                            <p className="text-secondaryAlt common_text_size_reg"> Chain ID: 1 </p>
-                        </div>
-                    </aside>
+                <div className="flex flex-col gap-[10px] relative top-0">
+                    <div 
+                        onClick={() => setShowChains(!showChains)} 
+                        className="flex-row-center justify-between w-full p-[8px] radius border-[1px] bg-secondary cursor-pointer hover:border-textBlue">
 
-                    <aside 
-                        className="flex-row-center gap-[6px]">
-                        <div className="flex flex-col items-end">
-                            <h4 className="font-bold text-[8px] md:text-[10px] lg:text-[12px] text-secondaryAlt"> Est. Gas Fee: 0.0008 ETH </h4>
-                            <p className="common_text_size_reg text-secondaryAlt"> ~$3.26 </p>
-                        </div>
-                        <MdKeyboardArrowDown size={20} className="" />
-                    </aside>
+                        {/* chains selection */}
+                        <aside className="flex-row-center">
+                            <Image src={selectedChain.logo} alt="chain-img" className="w-[25px] h-[25px] radius" />
+                            <div className="flex flex-col">
+                                <h4 className="font-bold text-[8px] md:text-[10px] lg:text-[12px]"> {selectedChain.name} </h4>
+                                <p className="text-secondaryAlt common_text_size_reg"> Chain ID: {selectedChain.chainId} </p>
+                            </div>
+                        </aside>
+
+                        <aside
+                            className="flex-row-center gap-[6px]">
+                            <div className="flex flex-col items-end">
+                                <h4 className="font-bold text-[8px] md:text-[10px] lg:text-[12px] text-secondaryAlt"> Est. Gas Fee: 0.0008 ETH </h4>
+                                <p className="common_text_size_reg text-secondaryAlt"> ~$3.26 </p>
+                            </div>
+                            <MdKeyboardArrowDown size={20} className="" />
+                        </aside>
+
+                    </div>
+
+                     {/* chains */}
+                    <div className={`${showChains ? "flex" : "hidden"} flex-col w-full radius bg-secondaryAlt overflow-y-scroll absolute top-[50px] z-[10]`}>
+                        { networkLists.map(network => (
+                            <div
+                                onClick={() => {
+                                    setShowChains(false)
+                                    setSelectedChain({
+                                        name: network.name,
+                                        chainId: network.chainId,
+                                        logo: network.logo
+                                    })
+                                }}
+                                key={network.id} 
+                                className="w-full flex-row-center justify-between cursor-pointer  hover:bg-secondary p-[10px]">
+                                <aside className="flex flex-col gap-[5px]">
+                                    <h3 className="font-bold text-[.7vmax]"> { network.name } </h3>
+                                    <p className="font-semibold text-[.5vmax]"> ChainId: {network.chainId} </p>
+                                </aside>
+
+                                <Image src={network.logo} alt="chain-img" className="w-[30px] h-[30px]" />
+                            </div>
+                        )) }
+                    </div>
                 </div>
+
+
                 {/* advanced settings */}
                 <div 
                     className="w-full flex flex-col gap-[10px]">
@@ -50,7 +91,6 @@ const ColChains = () => {
                         </div>  
                     </div>
                 </div>
-
 
             </div>
   )

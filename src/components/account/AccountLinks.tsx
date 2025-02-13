@@ -26,7 +26,7 @@ const AccountLinks = () => {
                   <link.Logo size={16} className="h-[60%] border-[1px]  border-secondaryAlt radius w-[5%]" />
                   <input
                      value={link.url}
-                     type="text" name="" id="" placeholder={link.url} className="p-[10px] outline-none w-[60%] h-full placeholder:font-bold placeholder:text-secondaryAlt border-l-[1px] border-secondaryAlt" 
+                     type="text" name="" id="" placeholder={link.url} className="p-[10px] outline-none w-[60%] h-full font-bold placeholder:font-bold placeholder:text-secondaryAlt border-l-[1px] border-secondaryAlt" 
                      />
                </aside>
             )) }

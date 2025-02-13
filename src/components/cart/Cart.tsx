@@ -16,7 +16,7 @@ const Cart = ({showCart, setShowCart}: ICart) => {
           className={`${showCart ? "relative h-full w-full translate-x-[0px] inset-0 opacity-1" : "hidden translate-x-[1950px] opacity-0"} glass_bg`} />
 
        <aside className={`h-[90%] w-[20%] bg-secondary p-[15px] absolute bottom-0 right-0 transition-all duration-500 radius`}>
-        <div className="flex-row-center justify-between w-full">
+        <div className="flex-row-center justify-between w-full border-b-[1px] border-secondaryAlt p-[20px]">
             <div className="flex-row-center gap-[10px]">
                 <h3 className="font-bold text-main text-[12px] md:text-[14px] lg:text-[16px] "> My Cart{"(3)"} </h3>
                 <h4 className="text-textBlue font-bold text-[10px] md:text-[12px] lg:text-[14px] cursor-pointer"> Clear </h4>
