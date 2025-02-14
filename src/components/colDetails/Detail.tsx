@@ -6,6 +6,7 @@ import { MdContentCopy } from "react-icons/md";
 import { colSocials, colExtraIcons, colTabs } from "@/utils/constants"
 import ColSearch from './ColSearch';
 import ColDetailSidebar from './ColDetailSidebar';
+import ColItems from "./ColItems";
 
 const dummyAddr = '0x2675616c14eb3f56db556c1ff95aaf2a19c88bcb'
 
@@ -17,7 +18,7 @@ const Detail = () => {
         // }, [tabs])
 
   return (
-    <section className="w-full p-[20px]">
+    <section className="w-full h-full p-[20px]">
         {/* top */}
         <aside className='w-full flex justify-between items-start mt-[20px]'>
             {/* left side (needs to refactor later on) */}
@@ -129,6 +130,7 @@ const Detail = () => {
         <aside className="flex w-full">  
             <ColDetailSidebar />
             {/* collections */}
+            <ColItems />
         </aside>
     </section>
   )

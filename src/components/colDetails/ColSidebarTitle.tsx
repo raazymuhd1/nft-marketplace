@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const ColSidebarTitle = ({title, styles}: IProps) => {
-  return ( <h3 className="font-bold text-[1vmax] w-full"> {title} </h3>
+  return ( <h3 className="font-bold text-[.9vmax] w-full"> {title} </h3>
   )
 }
 

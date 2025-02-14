@@ -130,16 +130,16 @@ const accountSocialLinks = [
 
 // dummy collections
 const dummyCollections = [
-    { id: 0, price: "1", tokenId: "100", img: azuki1 },
-    { id: 1, price: "1", tokenId: "100", img: azuki2 },
-    { id: 2, price: "1", tokenId: "100", img: azuki3 },
-    { id: 3, price: "1", tokenId: "100", img: azuki4 },
-    { id: 4, price: "1", tokenId: "100", img: azuki5 },
-    { id: 5, price: "1", tokenId: "100", img: azuki6 },
-    { id: 6, price: "1", tokenId: "100", img: azuki7 },
-    { id: 7, price: "1", tokenId: "100", img: azuki8 },
-    { id: 8, price: "1", tokenId: "100", img: azuki9 },
-    { id: 9, price: "1", tokenId: "100", img: azuki10 },
+    { id: 0, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki1, market: opensea },
+    { id: 1, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki2, market: opensea },
+    { id: 2, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki3, market: opensea },
+    { id: 3, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki4, market: opensea },
+    { id: 4, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki5, market: opensea },
+    { id: 5, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki6, market: opensea },
+    { id: 6, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki7, market: opensea },
+    { id: 7, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki8, market: opensea },
+    { id: 8, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki9, market: opensea },
+    { id: 9, price: "1", lastPrice: "0.4", tokenId: "100", img: azuki10, market: opensea },
 ]
 
 // marketplaces

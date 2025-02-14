@@ -12,8 +12,9 @@ const ColDetailSidebar = () => {
     const [showPrice, updateShowPrice] = useState<boolean>(false)
 
   return (
-    <section className="w-[15%] h-full border-r-[1px] p-[10px] sticky top-0 left-0">
+    <section className="w-[15%] h-full border-r-[1px] border-secondaryAlt p-[10px] sticky top-0 left-0 flex flex-col gap-[20px]">
 
+        {/* top filters */}
         <div className="w-full flex flex-col gap-[25px]">
           {/* prices */}
           <aside className="w-full flex flex-col gap-[10px]">
@@ -29,7 +30,7 @@ const ColDetailSidebar = () => {
                 <div className='flex-row-center w-full justify-between border-[1px] border-secondaryAlt radius p-[5px] cursor-pointer'>
                     <aside className="flex-row-center">
                         <Image src={ether} alt="" className="w-[20px] h-[20px] rounded-[50%]" />
-                        <h3 className="font-bold text-[.8vmax] uppercase"> Eth </h3>
+                        <h3 className="font-bold text-[.7vmax] uppercase"> Eth </h3>
                     </aside>
                     <MdKeyboardArrowDown size={20} />
                 </div>
@@ -49,6 +50,13 @@ const ColDetailSidebar = () => {
           <ColMarketplaces />
           {/* currencies */}
           <ColCurrencies />
+        </div>
+
+        {/* separator */}
+        <div className="w-full h-[1px] bg-secondaryAlt" />
+        {/* collection traits */}
+        <div className="w-full flex flex-col gap-[25px]">
+           <h3 className="font-bold text-[.9vmax]"> Traits </h3>
         </div>
 
 
