@@ -1,4 +1,4 @@
-import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava } from "@/assets"
+import { bera, dxnk, element, beraProfile, dxnkProfile, elementProfile, artBlock, azukiElementalBeans, azukiElemental, azuki, bitbears, boredape, doodles, lilpudgys, kaito, pudgy, mutant, thecaptain, honeycomb, jirasan, milady, ether, op, bnb, arb, ava, azuki1, azuki2, azuki3, azuki4, azuki5, azuki6, azuki7, azuki8, azuki9, azuki10, opensea, blur, weth, eth } from "@/assets"
 import { BsTwitter, BsTelegram, BsDiscord  } from "react-icons/bs";
 import { FaGlobe, FaStar, FaMedium  } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
@@ -128,10 +128,38 @@ const accountSocialLinks = [
     { id: 4, Logo: FaMedium, url: "https://medium.com/@" },
 ]
 
+// dummy collections
+const dummyCollections = [
+    { id: 0, price: "1", tokenId: "100", img: azuki1 },
+    { id: 1, price: "1", tokenId: "100", img: azuki2 },
+    { id: 2, price: "1", tokenId: "100", img: azuki3 },
+    { id: 3, price: "1", tokenId: "100", img: azuki4 },
+    { id: 4, price: "1", tokenId: "100", img: azuki5 },
+    { id: 5, price: "1", tokenId: "100", img: azuki6 },
+    { id: 6, price: "1", tokenId: "100", img: azuki7 },
+    { id: 7, price: "1", tokenId: "100", img: azuki8 },
+    { id: 8, price: "1", tokenId: "100", img: azuki9 },
+    { id: 9, price: "1", tokenId: "100", img: azuki10 },
+]
+
+// marketplaces
+const marketplaces = [
+    { id: 0, title: "Opensea", img: opensea, rate: "288 (2,88%)" },
+    { id: 1, title: "Blur", img: blur, rate: "248 (2,48%)" }
+]
+
+const currencies = [
+    {id: 0, title: "WETH", logo: weth},
+    {id: 1, title: "ETH", logo: eth},
+]
+
 export {
     navlists, heroSlides, 
     trackingItems, signalItems, 
     trendingItems, footerLinks, 
     footerSocials, networkLists, colSocials,
-    colExtraIcons, colTabs, priceFilters, accountSocialLinks
+    colExtraIcons, colTabs, priceFilters, accountSocialLinks,
+    dummyCollections,
+    marketplaces,
+    currencies
 }

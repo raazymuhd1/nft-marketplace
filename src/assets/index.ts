@@ -51,3 +51,23 @@ export {default as ava} from "./networks/ava.png"
 export {default as bnb} from "./networks/bnb.png"
 export {default as op} from "./networks/op.png"
 export {default as arb} from "./networks/arb.png"
+
+
+// dummy collections
+export { default as azuki1 } from "./dummy-collections/azuki1.avif"
+export { default as azuki2 } from "./dummy-collections/azuki2.avif"
+export { default as azuki3 } from "./dummy-collections/azuki3.avif"
+export { default as azuki4 } from "./dummy-collections/azuki4.avif"
+export { default as azuki5 } from "./dummy-collections/azuki5.avif"
+export { default as azuki6 } from "./dummy-collections/azuki6.avif"
+export { default as azuki7 } from "./dummy-collections/azuki7.avif"
+export { default as azuki8 } from "./dummy-collections/azuki8.avif"
+export { default as azuki9 } from "./dummy-collections/azuki9.avif"
+export { default as azuki10 } from "./dummy-collections/azuki10.avif"
+
+// marketplaces
+export { default as opensea } from "./marketplaces/opensea.svg"
+export { default as blur } from "./marketplaces/blurswap.svg"
+
+// currencies
+export {default as weth} from "./networks/weth.svg"
