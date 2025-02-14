@@ -7,7 +7,7 @@ interface IProps {
 
 const CustomButton: FC<IProps> = ({ styles, children }) => {
   return (
-    <button className={`${styles} p-[10px] border-none outline-none font-semibold rounded-[8px]`}>
+    <button className={`${styles} p-[10px] border-none outline-none font-semibold rounded-[8px] cursor-pointer`}>
         {children}
     </button>
   )
