@@ -12,7 +12,7 @@ const ColDetailSidebar = () => {
     const [showPrice, updateShowPrice] = useState<boolean>(false)
 
   return (
-    <section className="w-[15%] h-full border-r-[1px] border-secondaryAlt p-[10px] sticky top-0 left-0 flex flex-col gap-[20px]">
+    <section className="w-[18%] h-full border-r-[1px] border-secondaryAlt p-[10px] sticky top-0 left-0 flex flex-col gap-[20px]">
 
         {/* top filters */}
         <div className="w-full flex flex-col gap-[25px]">
@@ -54,6 +54,7 @@ const ColDetailSidebar = () => {
 
         {/* separator */}
         <div className="w-full h-[1px] bg-secondaryAlt" />
+
         {/* collection traits */}
         <div className="w-full flex flex-col gap-[25px]">
            <h3 className="font-bold text-[.9vmax]"> Traits </h3>

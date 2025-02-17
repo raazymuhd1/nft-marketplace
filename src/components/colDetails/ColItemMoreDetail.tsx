@@ -1,4 +1,6 @@
 import {ReactNode} from 'react'
+import Image from "next/image"
+import { ether } from '@/assets'
 
 type Iprops = {
     floorPrice: string;
@@ -12,16 +14,23 @@ type Iprops = {
 const ColItemMoreDetail = ({floorPrice, volume24, totalVolume, owners, listed, sales24}: Iprops) => {
 
     const handleMoreDetail = (title: string, value: string): ReactNode => {
-        return 
+        return <div className="flex flex-col gap-[2px]">
+            <div className="flex-row-center gap-[2px]">
+                <Image src={ether} alt="eth-icon" className="w-[15px] h-[15px] object-cover" />
+                <h3 className="text-[14px] md:text-[16px] font-extrabold"> {value} </h3>
+            </div>
+            <p className="text-[12px] text-secondaryAlt"> {title} </p>
+        </div>
     }
 
   return (
-     <div className="flex flex-col gap-[2px]">
-        <div className="flex-row-center gap-[2px]">
-            {/* eth icon */}
-            <h3 className="text-[14px] md:text-[16px] font-bold"> 3.146 </h3>
-        </div>
-        <p className="text-[12px] text-secondaryAlt"> floor price </p>
+     <div className="flex-row-center gap-[25px]">
+       { handleMoreDetail("floor price", floorPrice) }
+       { handleMoreDetail("24h volume", volume24) }
+       { handleMoreDetail("total volume", totalVolume) }
+       { handleMoreDetail("owners", owners) }
+       { handleMoreDetail("listed", listed) }
+       { handleMoreDetail("24 sales", sales24) }
     </div>
   )
 }

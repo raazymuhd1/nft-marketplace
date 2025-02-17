@@ -4,7 +4,7 @@ import {Detail} from "@/components"
 const CollectionDetailPage = () => {
   return (
     <div
-        className="h-screen w-full"
+        className="h-full w-full"
      >
         <Detail />
      </div>

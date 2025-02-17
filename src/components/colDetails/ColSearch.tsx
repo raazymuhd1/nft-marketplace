@@ -29,7 +29,7 @@ const ColSearch = () => {
             </div>
 
             {/* filter lists */}
-             <div className={`${showFilters ? "flex opacity-1 flex-col gap-[10px]" : "hidden opacity-0"} bg-main radius absolute top-[40px]`}>
+             <div className={`${showFilters ? "flex opacity-1 flex-col gap-[10px]" : "hidden opacity-0"} bg-main radius absolute top-[40px] w-full z-[9]`}>
                 { priceFilters?.map(filter => (
                     <div
                         onClick={() => updateFilters(false)} 
