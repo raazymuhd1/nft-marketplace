@@ -88,6 +88,31 @@ const networkLists = [
     { id: 4, name: "Avalanche", chainId: 1, logo: ava },
 ]
 
+// collection details
+const colInfo = [
+    { 
+        id: 0,
+        name: "Azuki",
+        details: [{
+            id: 0,
+            contractAddress: "0x2675616c14eb3f56db556c1ff95aaf2a19c88bcb",
+            itemsCount: "10,000",
+            createdAt: "Jan 2022",
+            royalty: "0%" ,
+        }],
+        description: "A brand for the metaverse. Built by the community. Azuki starts with a collection of 10,000 avatars that give you membership access to The Garden: a corner of the internet where artists, builders, and web enthusiasts meet to create a decentralized future. Azuki holders receive access to exclusive drops, experiences, and more. Visit azuki.com for more details. We rise together. We build together. We grow together. Ready to take the red bean?A brand for the metaverse. Built by the community. Azuki starts with a collection of 10,000 avatars that give you membership access to The Garden: a corner of the internet where artists, builders, and web3 enthusiasts meet to create a decentralized future. Azuki holders receive access to exclusive drops, experiences, and more. Visit azuki.com for more details. We rise together. We build together. We grow together. Ready to take the red bean?",
+        moreDetail: [{
+            id: 0,
+            floorPrice: "2.9529",
+            "volume24": "671",
+            "totalVolume": "1.04M",
+            owners: "4,118",
+            listed: "4%",
+            sales24: "225"
+        }]
+     }
+]
+
 // item socials
 const colSocials = [
     { id: 0, Logo: FaGlobe, url: "/" },
@@ -157,7 +182,8 @@ export {
     navlists, heroSlides, 
     trackingItems, signalItems, 
     trendingItems, footerLinks, 
-    footerSocials, networkLists, colSocials,
+    footerSocials, networkLists, 
+    colInfo, colSocials,
     colExtraIcons, colTabs, priceFilters, accountSocialLinks,
     dummyCollections,
     marketplaces,

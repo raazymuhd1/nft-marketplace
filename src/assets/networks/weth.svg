@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>weth</title>
+    <g id="weth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" stroke="#EDEDED" stroke-width="5" fill="#FBFBFB" cx="200" cy="200" r="197.5"></circle>
+        <g transform="translate(125.000000, 75.000000)" fill-rule="nonzero" id="路径">
+            <polygon fill="#F97FB0" points="0 113.626024 74.98875 0 74.98875 170.43966"></polygon>
+            <polygon fill="#F15B97" points="74.98125 0 149.97 113.626024 74.98125 170.43966"></polygon>
+            <polygon fill="#E2508A" points="74.98875 193.186363 0 136.373976 74.98875 250"></polygon>
+            <polygon fill="#E2508A" points="75.01125 193.186363 150 136.373976 75.01125 250"></polygon>
+            <polygon fill="#E2508A" points="149.9975 113.632273 75.00875 90.9066934 75.00875 170.44466"></polygon>
+            <polygon fill="#E2508A" points="0.0205 113.632273 75.00875 90.9066934 75.00875 170.44466"></polygon>
+        </g>
+    </g>
+</svg>
