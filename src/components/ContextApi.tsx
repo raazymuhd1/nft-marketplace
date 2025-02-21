@@ -8,20 +8,21 @@ interface IProvider {
 
 const MarketContext = createContext({
     showProfile: false,
-    setShowProfile: (value: boolean) => {
-        if(typeof this != "undefined") {
-            this.showProfile = value
-        }
-    }
+    setShowProfile: (value: boolean) => {},
+    darkMode: false,
+    setDarkMode: (value: boolean) => {}
 });
 
 const MarketContextProvider = ({children}: IProvider) => {
     const [showProfile, setShowProfile] = useState<boolean>(false)
+    const [darkMode, setDarkMode] = useState<boolean>(false)
 
   return (
     <MarketContext.Provider value={{
         showProfile,
-        setShowProfile
+        setShowProfile,
+        darkMode,
+        setDarkMode,
     }}>
        { children }
     </MarketContext.Provider>
