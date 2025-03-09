@@ -12,16 +12,19 @@ const Top = () => {
                 <ItemHeader />
                 <div className="flex-col-notcenter gap-[5px] w-full">
                     { trackingItems.slice(0, 5).map(item => (
-                    <TopItems 
-                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                        <TopItems 
+                            key={item.id}
+                            { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } 
+                        />
                     )) }
                 </div>
             </div>
             <div className="w-[30%]">
                 <ItemHeader />
-                <div className="flex-col-notcenter gap-[5px] w-full">
+                <div className="flex flex-col items-center gap-[5px] w-full">
                     { trackingItems.slice(5, 10).map(item => (
                     <TopItems 
+                        key={item.id}
                         { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
                     )) }
                 </div>

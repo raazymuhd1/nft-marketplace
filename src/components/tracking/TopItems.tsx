@@ -18,7 +18,7 @@ const TopItems = ({id, url, img, title, floorPrice, volume}: IProps) => {
                 href={url} className="w-full hover:bg-secondaryAlt flex-row-center justify-between p-[10px]">
                 <aside className="flex-row-center w-[50%] gap-[10px]">
                     <h4 className="font-semibold"> {id} </h4>
-                            <Image src={img} alt="item-img rounded-[10px]" className="small-img" />  
+                    <Image src={img} alt="item-img rounded-[10px]" className="small-img" />  
                     <h2 className="font-bold text-[16px] whitespace-nowrap"> {title} </h2>   
                 </aside>
                 <aside className="flex-row-center w-[50%] gap-[50px] justify-end">
