@@ -20,13 +20,14 @@ const Detail = () => {
         {/* top */}
         <aside className='w-full h-[fit-content] flex justify-between items-start mt-[20px]'>
             {/* left side (needs to refactor later on) */}
-            <aside className="flex gap-[15px] w-[50%]">
+            <aside className="flex gap-[15px] w-[60%]">
                 <Image src={azuki} alt="item-img" className="w-[100px] h-[100px] object-cover radius" />
                 <div className="flex flex-col gap-[5px] w-[60%]">
+                    {/* collection details */}
                     { colDetail.map(({id, name, details, moreDetail, description}, idx) => (
                      <div 
-                        key={id || idx}
-                        className="flex flex-col gap-[5px]">
+                        key={id}
+                        className="flex flex-col gap-[5px] w-full">
                             <h2 className='font-bold lg:text-[25px]'> {name} </h2>
                             { details.map(detail => (
                                     <ColItemDetails { ...detail } />
@@ -41,7 +42,7 @@ const Detail = () => {
 
                             {/* prices */}
                             { moreDetail.map(detail => (
-                                    <ColItemMoreDetail { ...detail } />
+                                    <ColItemMoreDetail key={detail.id} { ...detail } />
                             )) }
                      </div>
                     )) }
@@ -50,7 +51,7 @@ const Detail = () => {
             </aside>
 
             {/* collection socials */}
-            <aside className="w-[50%] flex-row-center gap-[15px] justify-end">
+            <aside className="w-[40%] flex-row-center gap-[15px] justify-end">
                 {colSocials.map(social => (
                     <a key={social.id} href={social.url} target='_blank' >
                         <social.Logo size={20} />
