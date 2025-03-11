@@ -15,7 +15,7 @@ const Signal = () => {
           <MdArrowBackIos size={24} className="h-full" />
          </aside>
          {  signalItems.map(item => (
-           <ItemCard { ...item } />
+           <ItemCard key={item.id} { ...item } />
          )) }
          {/* right arrow */}
          <aside className='bg-secondaryAlt w-[50px] h-[50px] rounded-[50%] flex justify-center'>

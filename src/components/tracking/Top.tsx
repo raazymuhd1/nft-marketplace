@@ -14,7 +14,7 @@ const Top = () => {
                     { trackingItems.slice(0, 5).map(item => (
                         <TopItems 
                             key={item.id}
-                            { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } 
+                            { ...{ id: item.id, url: "/collection-details/1", title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } 
                         />
                     )) }
                 </div>
@@ -25,7 +25,7 @@ const Top = () => {
                     { trackingItems.slice(5, 10).map(item => (
                     <TopItems 
                         key={item.id}
-                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                        { ...{ id: item.id, url: "/collection-details/1", title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
                     )) }
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Top = () => {
                 <div className="flex-col-notcenter gap-[5px] w-full">
                     { trackingItems.slice(10, 15).map(item => (
                     <TopItems 
-                        { ...{ id: item.id, url: item.url, title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
+                        { ...{ id: item.id, url: "/collection-details/1", title: item.title, img: item.img, floorPrice: item.floorPrice, volume: item.volume } } />
                     )) }
                 </div>
             </div>
